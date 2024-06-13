@@ -1,0 +1,54 @@
+:root {
+    --primary: #5352ed;
+    --white: #fffffff;
+    --light: #d2dae2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--light);
+    background-color: #21232e;
+}
+
+ul {
+    list-style: none;
+}
+
+.site {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.option ul li {
+    position: relative;
+    width: 300px;
+    height: 70px;
+    margin-bottom: 15px;
+}
+
+.option ul li label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+}
